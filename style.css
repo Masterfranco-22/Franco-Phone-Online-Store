@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: green white green;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #111;
+    color: green;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: little;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   
+    
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.content {
+    padding: 40px;
+}
+
+.gallery {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery h3 {
+    margin: 30px 0 15px;
+}
+
+/* Makes them straight in one line */
+.product-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Each phone container */
+.product-card {
+    text-align: center;
+    width: 180px;
+}
+
+/* Phone image */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Phone name */
+.product-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: white;
+    margin-top: 40px;
+}
+/* Welcome Animation */
+
+.welcome-text {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideDown 3s ease-in-out infinite;
+}
+
+.sub-text {
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Keyframes */
+
+@keyframes fadeSlideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
